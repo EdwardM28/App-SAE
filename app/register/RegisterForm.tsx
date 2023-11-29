@@ -45,7 +45,7 @@ const RegisterForm: React.FC<RegisterUserProps> = ({ currentUser }) => {
     axios
       .post("/api/register", data)
       .then(() => {
-        toast.success("Account created");
+        toast.success("Cuenta Creada");
 
         signIn("credentials", {
           email: data.email,
@@ -72,22 +72,22 @@ const RegisterForm: React.FC<RegisterUserProps> = ({ currentUser }) => {
   };
 
   if (currentUser) {
-    return <p className="text-center">Logged in. Redirecting...</p>;
+    return <p className="text-center">Registrado. Cargando...</p>;
   }
 
   return (
     <>
-      <Heading title="Sign up for E~Shop" />
+      <Heading title="Regístrate en SAE" />
       <Button
         outline
-        label="Sign up with Google"
+        label="Regístrate con Google"
         icon={AiOutlineGoogle}
         onClick={() => signIn("google")}
       />
       <hr className="bg-slate-300 w-full h-px" />
       <Input
         id="name"
-        label="Name"
+        label="Nombre"
         disabled={isLoading}
         register={register}
         errors={errors}
@@ -95,7 +95,7 @@ const RegisterForm: React.FC<RegisterUserProps> = ({ currentUser }) => {
       ></Input>
       <Input
         id="email"
-        label="Email"
+        label="Correo Electronico"
         disabled={isLoading}
         register={register}
         errors={errors}
@@ -103,7 +103,7 @@ const RegisterForm: React.FC<RegisterUserProps> = ({ currentUser }) => {
       ></Input>
       <Input
         id="password"
-        label="Password"
+        label="Contraseña"
         disabled={isLoading}
         register={register}
         errors={errors}
@@ -111,13 +111,13 @@ const RegisterForm: React.FC<RegisterUserProps> = ({ currentUser }) => {
         type="password"
       ></Input>
       <Button
-        label={isLoading ? "Loading..." : "Sing Up"}
+        label={isLoading ? "Cargando..." : "Registrarme"}
         onClick={handleSubmit(onSubmit)}
       />
       <p className="text-sm">
-        Already have an account?{" "}
+        ¿Ya tienes una cuenta?{" "}
         <Link className="underline" href="/login">
-          Log in
+          Inicia Sección
         </Link>
       </p>
     </>

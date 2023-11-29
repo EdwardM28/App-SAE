@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 const poppins = Poppins({ subsets: ["latin"], weight: ["400", "700"] });
 
 export const metadata = {
-  title: "Next13 E-commerce",
+  title: "SAE",
   description: "Next13 fullstack e-commerce",
 };
 

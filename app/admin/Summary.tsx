@@ -22,27 +22,27 @@ type SummaryDataType = {
 const Summary: React.FC<SummaryProps> = ({ orders, products, users }) => {
   const [summaryData, setSummaryData] = useState<SummaryDataType>({
     sale: {
-      label: "Total Sale",
+      label: "Venta total",
       digit: 0,
     },
     products: {
-      label: "Total Products",
+      label: "Productos totales",
       digit: 0,
     },
     orders: {
-      label: "Total Orders",
+      label: "Órdenes totales",
       digit: 0,
     },
     paidOrders: {
-      label: "Paid Orders",
+      label: "Órdenes pagadas",
       digit: 0,
     },
     unpaidOrders: {
-      label: "Unpaid Orders",
+      label: "Pedidos impagos",
       digit: 0,
     },
     users: {
-      label: "Total Users",
+      label: "Total de usuarios",
       digit: 1533,
     },
   });
@@ -80,7 +80,7 @@ const Summary: React.FC<SummaryProps> = ({ orders, products, users }) => {
   return (
     <div className="max-w-[1150px] m-auto">
       <div className="mb-4 mt-8">
-        <Heading title="Stats" center />
+        <Heading title="Estadísticas" center />
       </div>
       <div className="grid grid-cols-2 gap-3 max-h-[50vh] overflow-y-auto">
         {summaryKeys &&

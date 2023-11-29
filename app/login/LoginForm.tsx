@@ -50,7 +50,7 @@ const LoginForm: React.FC<LoginUserProps> = ({ currentUser }) => {
       if (callback?.ok) {
         router.push("/cart");
         router.refresh();
-        toast.success("Logged in");
+        toast.success("Logueado Correctamente");
       }
 
       if (callback?.error) {
@@ -60,15 +60,15 @@ const LoginForm: React.FC<LoginUserProps> = ({ currentUser }) => {
   };
 
   if (currentUser) {
-    return <p className="text-center">Logged in. Redirecting...</p>;
+    return <p className="text-center">Logueado. Redirigiendo...</p>;
   }
 
   return (
     <>
-      <Heading title="Sign in to E~Shop" />
+      <Heading title="Iniciar sesión en SAE" />
       <Button
         outline
-        label="Continue with Google"
+        label="Continuar con Google"
         icon={AiOutlineGoogle}
         onClick={() => {
           signIn("google");
@@ -77,7 +77,7 @@ const LoginForm: React.FC<LoginUserProps> = ({ currentUser }) => {
       <hr className="bg-slate-300 w-full h-px" />
       <Input
         id="email"
-        label="Email"
+        label="Correo Electronico"
         disabled={isLoading}
         register={register}
         errors={errors}
@@ -86,7 +86,7 @@ const LoginForm: React.FC<LoginUserProps> = ({ currentUser }) => {
       ></Input>
       <Input
         id="password"
-        label="Password"
+        label="Contraseña"
         disabled={isLoading}
         register={register}
         errors={errors}
@@ -94,13 +94,13 @@ const LoginForm: React.FC<LoginUserProps> = ({ currentUser }) => {
         type="password"
       ></Input>
       <Button
-        label={isLoading ? "Loading..." : "Login"}
+        label={isLoading ? "Cargando...." : "Iniciar Sección"}
         onClick={handleSubmit(onSubmit)}
       />
       <p className="text-sm">
-        Do not have an account?{" "}
+        ¿No tienes una cuenta?{" "}
         <Link className="underline" href="/register">
-          Sign Up
+          Registrarme
         </Link>
       </p>
     </>
