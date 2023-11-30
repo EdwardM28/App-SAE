@@ -47,10 +47,10 @@ const OrdersClient: React.FC<OrdersClientProps> = ({ orders }) => {
   }
 
   const columns: GridColDef[] = [
-    { field: "id", headerName: "Order ID", width: 220 },
+    { field: "id", headerName: "Order Id", width: 220 },
     {
       field: "amount",
-      headerName: "Amount(USD)",
+      headerName: "Monto(COP))",
       width: 130,
       renderCell: (params) => {
         return (
@@ -60,21 +60,21 @@ const OrdersClient: React.FC<OrdersClientProps> = ({ orders }) => {
     },
     {
       field: "paymentStatus",
-      headerName: "Payment Status",
+      headerName: "Estado de pago",
       width: 130,
       renderCell: (params) => {
         return (
           <div>
             {params.row.paymentStatus === "pending" ? (
               <Status
-                text="pending"
+                text="pendiente"
                 icon={MdAccessTimeFilled}
                 bg="bg-slate-200"
                 color="text-slate-700"
               />
             ) : params.row.paymentStatus === "complete" ? (
               <Status
-                text="completed"
+                text="completado"
                 icon={MdDone}
                 bg="bg-teal-200"
                 color="text-teal-700"
@@ -88,28 +88,28 @@ const OrdersClient: React.FC<OrdersClientProps> = ({ orders }) => {
     },
     {
       field: "deliveryStatus",
-      headerName: "Delivery Status",
+      headerName: "Estado de entrega",
       width: 130,
       renderCell: (params) => {
         return (
           <div>
             {params.row.deliveryStatus === "pending" ? (
               <Status
-                text="pending"
+                text="pendiente"
                 icon={MdAccessTimeFilled}
                 bg="bg-slate-200"
                 color="text-slate-700"
               />
             ) : params.row.deliveryStatus === "dispatched" ? (
               <Status
-                text="dispatched"
+                text="enviado"
                 icon={MdDeliveryDining}
                 bg="bg-purple-200"
                 color="text-purple-700"
               />
             ) : params.row.deliveryStatus === "delivered" ? (
               <Status
-                text="delivered"
+                text="entregado"
                 icon={MdDone}
                 bg="bg-green-200"
                 color="text-green-700"
@@ -123,12 +123,12 @@ const OrdersClient: React.FC<OrdersClientProps> = ({ orders }) => {
     },
     {
       field: "date",
-      headerName: "Date",
+      headerName: "Fecha",
       width: 130,
     },
     {
       field: "action",
-      headerName: "Actions",
+      headerName: "Acciones",
       width: 70,
       renderCell: (params) => {
         return (
@@ -145,12 +145,12 @@ const OrdersClient: React.FC<OrdersClientProps> = ({ orders }) => {
     },
   ];
 
-  if (!orders) return <NullData title="Oops! No orders yet." />;
+  if (!orders) return <NullData title="¡Ups! Aún no hay pedidos." />;
 
   return (
     <div className="max-w-[900px] m-auto text-xl">
       <div className="mb-4 mt-8">
-        <Heading title="Your Orders" center />
+        <Heading title="Tus ordenes" center />
       </div>
       <div style={{ height: 600, width: "100%" }}>
         <DataGrid

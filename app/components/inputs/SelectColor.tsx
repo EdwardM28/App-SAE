@@ -67,7 +67,7 @@ const SelectColor: React.FC<SelectColorProps> = ({
             <p>{file?.name}</p>
             <div className="w-[70px]">
               <Button
-                label="Cancel"
+                label="Cancelar"
                 onClick={() => {
                   setFile(null);
                   removeImageFromState(item);

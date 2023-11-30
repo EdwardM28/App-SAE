@@ -24,26 +24,26 @@ const OrderDetails: React.FC<OrderDetailsProps> = ({ order }) => {
   return (
     <div className="max-w-[1150px] m-auto flex flex-col gap-2">
       <div className="mt-8">
-        <Heading title="Order Details" />
+        <Heading title="Detalles del pedido" />
       </div>
-      <div>Order ID: {order.id}</div>
+      <div>Orden Id: {order.id}</div>
       <div>
-        Total Amount:{" "}
+        Total Monto:{" "}
         <span className="font-bold">{formatPrice(order.amount)}</span>
       </div>
       <div className="flex gap-2 items-center">
-        <div>Payment status:</div>
+        <div>Estado de pago:</div>
         <div>
           {order.status === "pending" ? (
             <Status
-              text="pending"
+              text="pendiente"
               icon={MdAccessTimeFilled}
               bg="bg-slate-200"
               color="text-slate-700"
             />
           ) : order.status === "complete" ? (
             <Status
-              text="completed"
+              text="completado"
               icon={MdDone}
               bg="bg-teal-200"
               color="text-teal-700"
@@ -54,25 +54,25 @@ const OrderDetails: React.FC<OrderDetailsProps> = ({ order }) => {
         </div>
       </div>
       <div className="flex gap-2 items-center">
-        <div>Delivery status:</div>
+        <div>Estado de entrega:</div>
         <div>
           {order.deliveryStatus === "pending" ? (
             <Status
-              text="pending"
+              text="pendiente"
               icon={MdAccessTimeFilled}
               bg="bg-slate-200"
               color="text-slate-700"
             />
           ) : order.deliveryStatus === "dispatched" ? (
             <Status
-              text="dispatched"
+              text="enviado"
               icon={MdDeliveryDining}
               bg="bg-purple-200"
               color="text-purple-700"
             />
           ) : order.deliveryStatus === "delivered" ? (
             <Status
-              text="delivered"
+              text="entregado"
               icon={MdDone}
               bg="bg-green-200"
               color="text-green-700"
@@ -82,9 +82,9 @@ const OrderDetails: React.FC<OrderDetailsProps> = ({ order }) => {
           )}
         </div>
       </div>
-      <div>Date: {moment(order.createdDate).fromNow()}</div>
+      <div>Fecha: {moment(order.createdDate).fromNow()}</div>
       <div>
-        <h2 className="font-semibold mt-4 mb-2">Products Ordered</h2>
+        <h2 className="font-semibold mt-4 mb-2">Productos pedidos</h2>
         <div
           className="grid
         grid-cols-5
@@ -94,9 +94,9 @@ const OrderDetails: React.FC<OrderDetailsProps> = ({ order }) => {
         items-center
         "
         >
-          <div className="col-span-2 justify-self-start">PRODUCT</div>
-          <div className="justify-self-center">PRICE</div>
-          <div className="justify-self-center">QUANTITY</div>
+          <div className="col-span-2 justify-self-start">PRODUCTO</div>
+          <div className="justify-self-center">PRECIO</div>
+          <div className="justify-self-center">CANTIDAD</div>
           <div className="justify-self-end">TOTAL</div>
         </div>
         <div>
