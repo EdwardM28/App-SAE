@@ -84,7 +84,7 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
             ) : (
               <div>
                 <Link href="/login">
-                  <MenuItem onClick={toggleOpen}>Iniciar Sección</MenuItem>
+                  <MenuItem onClick={toggleOpen}>Iniciar Sesión</MenuItem>
                 </Link>
                 <Link href="/register">
                   <MenuItem onClick={toggleOpen}>Registrarme</MenuItem>

@@ -94,7 +94,7 @@ const LoginForm: React.FC<LoginUserProps> = ({ currentUser }) => {
         type="password"
       ></Input>
       <Button
-        label={isLoading ? "Cargando...." : "Iniciar Sección"}
+        label={isLoading ? "Cargando...." : "Iniciar Sesión"}
         onClick={handleSubmit(onSubmit)}
       />
       <p className="text-sm">
