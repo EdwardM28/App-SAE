@@ -78,7 +78,14 @@ const CartClient: React.FC<CurrentUserProps> = ({ currentUser }) => {
           Impuestos y envío calculados al finalizar la compra
           </p>
           <Button
-            label={currentUser ? "Pagar" : "Iniciar sesión para pagar"}
+            label={currentUser ? "Pago con tarjeta de credito" : "Iniciar sesión para pagar"}
+            outline={currentUser ? false : true}
+            onClick={() => {
+              currentUser ? router.push("/checkout") : router.push("/login");
+            }}
+          />
+          <Button
+            label={currentUser ? "Pago por PSE" : "Iniciar sesión para pagar"}
             outline={currentUser ? false : true}
             onClick={() => {
               currentUser ? router.push("/checkout") : router.push("/login");
