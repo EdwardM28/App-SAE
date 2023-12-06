@@ -14,7 +14,7 @@ const Footer = () => {
       <Container>
         <div className="flex flex-col md:flex-row justify-between pt-16 pb-8">
           <FooterList>
-            <h3 className="text-base font-bold mb-2">Shop Categories</h3>
+            <h3 className="text-base font-bold mb-2">Categorías de tienda</h3>
             <Link href="#">Phones</Link>
             <Link href="#">Laptops</Link>
             <Link href="#">Desktops</Link>
@@ -23,26 +23,20 @@ const Footer = () => {
             <Link href="#">Accessories</Link>
           </FooterList>
           <FooterList>
-            <h3 className="text-base font-bold mb-2">Customer Service</h3>
-            <Link href="#">Contact Us</Link>
-            <Link href="#">Shipping Policy</Link>
-            <Link href="#">Returns & Exchanges</Link>
-            <Link href="#">Watches</Link>
-            <Link href="#">FAQs</Link>
+            <h3 className="text-base font-bold mb-2">Servicio al Cliente</h3>
+            <Link href="#">Contactanos</Link>
           </FooterList>
           <div className="w-full md:w-1/3 mb-6 md:mb-0">
-            <h3 className="text-base font-bold mb-2">About Us</h3>
+            <h3 className="text-base font-bold mb-2">Sobre nosotros</h3>
             <p className="mb-2">
-              At our electronics store, we are dedicated to providing the latest
-              and greatest devices and accessories to our customers. With a wide
-              selection of phones, TVs, laptops, watches, and accessories.
+            En nuestra tienda de electrónica, nos dedicamos a brindar lo último y los mejores dispositivos y accesorios para nuestros clientes. con una amplia selección de teléfonos, televisores, computadoras portátiles, relojes y accesorios.
             </p>
             <p className="text-sm">
-              &copy; {new Date().getFullYear()} E~Shop. All rights reserved.
+              &copy; {new Date().getFullYear()} SAE. Reservados todos los derechos.
             </p>
           </div>
           <FooterList>
-            <h3 className="text-base font-bold mb-2">Follow Us</h3>
+            <h3 className="text-base font-bold mb-2">Síganos</h3>
             <div className="flex gap-2">
               <Link href="#">
                 <MdFacebook size={24} />
