@@ -51,13 +51,13 @@ SAE es un sistema diseñado para mejorar la administracion de pequeñas y grande
 
 2. **Instalar Dependencias**
    ```bash
-  npm install
+   npm install
 
 3. **Configurar Variables de Entorno**
    ```bash
-  Crea un archivo .env basado en el .env.example proporcionado.
-  Completa las variables de entorno necesarias para la configuración de Stripe, Prisma y otras claves secretas requeridas.
-  Ejecutar en Modo de Desarrollo
+   Crea un archivo .env basado en el .env.example proporcionado.
+   Completa las variables de entorno necesarias para la configuración de Stripe, Prisma y otras claves secretas requeridas.
+   Ejecutar en Modo de Desarrollo
 
 bash
 Copy code
