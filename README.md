@@ -1,7 +1,7 @@
 <!-- Banner SAE -->
 <div align="center">
 	<img height="200px" src="/public/sena.png" alt="Logo SENA"/>
-  <img height="200px" src="Public/img/logo.jpg" alt="Logo SAE"/>
+  <img height="200px" src="/public/logo.jpeg" alt="Logo SAE"/>
 </div>
 <br>
 <div align="center">
