@@ -1,6 +1,6 @@
 <!-- Banner SAE -->
 <div align="center">
-	<img height="200px" src="Public/img/logo_green_2023.png" alt="Logo SENA"/>
+	<img height="200px" src="/public/sena.png" alt="Logo SENA"/>
   <img height="200px" src="Public/img/logo.jpg" alt="Logo SAE"/>
 </div>
 <br>
