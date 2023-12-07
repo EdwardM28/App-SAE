@@ -5,10 +5,7 @@
 </div>
 <br>
 <div align="center">
-<div align="center" style="background-color: #1AFF02; padding: 20px;">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=4000&pause=1000&color=1AFF02&center=true&vCenter=true&width=435&lines=Bienvenidos+a+SAE;Un+proyecto+de+Next.js+y+React.js" alt="Typing SVG" />
-  </a>
+	<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=4000&pause=1000&color=ADD8E6&center=true&vCenter=true&width=435&lines=Bienvenidos+a+SAE;Un+proyecto+de+Next.js+y+React.js" alt="Typing SVG" /></a>
 </div>
 <br>
 <div align="center">
