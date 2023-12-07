@@ -33,7 +33,7 @@
 SAE es un sistema diseñado para mejorar la administracion de pequeñas y grandes empresas
 
 <!-- Stack utilizado -->
-## Tech Stack
+## Pila de Tecnologias
 
 ![Typescript](https://img.shields.io/badge/Typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
