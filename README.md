@@ -24,11 +24,6 @@
 
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
 ![React.js](https://img.shields.io/badge/React.js-61DAFB?style=for-the-badge&logo=react&logoColor=white)
-![Typescript](https://img.shields.io/badge/Typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white)
-![Stripe](https://img.shields.io/badge/Stripe-008CDD?style=for-the-badge&logo=stripe&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
 
 </div>
 
@@ -40,16 +35,13 @@ SAE es un sistema diseñado para mejorar la administracion de pequeñas y grande
 <!-- Stack utilizado -->
 ## Tech Stack
 
-**Client:** <br>
-<a href="https://react.dev/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/react-2.svg" alt="React.js" width="40" height="40"/></a>
-<a href="https://es.redux.js.org/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/redux.svg" alt="Redux" width="40" height="40"/></a>
-<a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/></a>
+![Typescript](https://img.shields.io/badge/Typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white)
+![Stripe](https://img.shields.io/badge/Stripe-008CDD?style=for-the-badge&logo=stripe&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
 
-**Server:** <br>
-<a href="https://nodejs.org/es" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg" alt="Node.js" width="40" height="40"/></a>
-<a href="https://expressjs.com/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/express-fashion-stores.svg" alt="Express" width="40" height="40"/></a>
-<a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/mysql-logo.svg" alt="MySql" width="45" height="40"/></a>
-<a href="https://www.mongodb.com/es" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg" alt="MongoDB" width="40" height="40"/></a>
 
 ## Deployment
 
