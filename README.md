@@ -42,88 +42,38 @@ SAE es un sistema diseñado para mejorar la administracion de pequeñas y grande
 ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
 
+## Inicio Rápido
 
-## Deployment
+1. **Clonar el Repositorio**
+   ```bash
+   git clone https://github.com/tu-usuario/tu-proyecto.git
+   cd tu-proyecto
+Instalar Dependencias
 
-![Yarn](https://img.shields.io/badge/yarn-%232C8EBB.svg?style=for-the-badge&logo=yarn&logoColor=white)
-![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
+bash
+Copy code
+npm install
+Configurar Variables de Entorno
 
-<p>
-  En este proyecto es posibles utilizan yarn como npm.
-</p>
+Crea un archivo .env basado en el .env.example proporcionado.
+Completa las variables de entorno necesarias para la configuración de Stripe, Prisma y otras claves secretas requeridas.
+Ejecutar en Modo de Desarrollo
 
-### 🐱‍💻Back-end
-<p>
-  Para ejecutar el servidor primero entramos al directorio raíz del <a href="./backend/">backend</a> 
-</p>
+bash
+Copy code
+npm run dev
+El proyecto estará disponible en http://localhost:3000.
 
-<p>
-  Estando acá instalamos las dependencias de yarn/npm
-</p>
-
-```bash
-  yarn install
-```
-<br>
-
-**Development**
-<p>
-  Si se utiliza en desarrollo utilizaremos:
-</p>
-
-```bash
-  yarn dev
-```
-
-<div align="center">
-	<img src="Public/img/backend_dev.png" alt="Backend running"/>
-</div>
-
-<br>
-
-**Production**
-<p>
-  Y para producción utilizaremos:
-</p>
-
-```bash
-  yarn star
-```
----
-### 💻Front-end
-<p>
-  Para ejecutar la vista entraremos al directorio raíz del <a href="Public/img/backend_dev.png">frontend</a> 
-</p>
-
-<p>
-  Estando acá instalamos las dependencias de yarn/npm acá utilizamos <a href="https://vitejs.dev/">vite</a>
-</p>
-
-```bash
-  npm install
-```
-<br>
-
-**Development**
-<p>
-  Si se utiliza en desarrollo utilizaremos:
-</p>
-
-```bash
-  npm run dev
-```
-
-
-<br>
-
-**Production**
-<p>
-  Y para producción utilizaremos:
-</p>
-
-```bash
-  npm run deploy
-```
+Estructura del Proyecto
+bash
+Copy code
+|-- /components             # Componentes reutilizables
+|-- /pages                  # Páginas de la aplicación
+|-- /styles                 # Estilos globales y configuración de Tailwind
+|-- /prisma                 # Configuración y modelos de la base de datos con Prisma
+|-- /public                 # Archivos estáticos
+|-- /util                   # Funciones de utilidad
+|-- ...
 
 
 <!-- Autores del proyecto -->
