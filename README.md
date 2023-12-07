@@ -48,12 +48,14 @@ SAE es un sistema diseñado para mejorar la administracion de pequeñas y grande
    ```bash
    git clone https://github.com/tu-usuario/tu-proyecto.git
    cd tu-proyecto
-Instalar Dependencias
 
-bash
-Copy code
-npm install
-Configurar Variables de Entorno
+
+2. **Instalar Dependencias**
+    ```bash
+  bash
+  Copy code
+  npm install
+  Configurar Variables de Entorno
 
 Crea un archivo .env basado en el .env.example proporcionado.
 Completa las variables de entorno necesarias para la configuración de Stripe, Prisma y otras claves secretas requeridas.
