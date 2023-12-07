@@ -59,22 +59,19 @@ SAE es un sistema diseñado para mejorar la administracion de pequeñas y grande
    Completa las variables de entorno necesarias para la configuración de Stripe, Prisma y otras claves secretas requeridas.
    Ejecutar en Modo de Desarrollo
 
-bash
-Copy code
-npm run dev
-El proyecto estará disponible en http://localhost:3000.
+4. **Ejecutar en Modo de Desarrollo**
+   ```bash
+   npm run dev
+   El proyecto estará disponible en http://localhost:3000.
 
-Estructura del Proyecto
-bash
-Copy code
-|-- /components             # Componentes reutilizables
-|-- /pages                  # Páginas de la aplicación
-|-- /styles                 # Estilos globales y configuración de Tailwind
-|-- /prisma                 # Configuración y modelos de la base de datos con Prisma
-|-- /public                 # Archivos estáticos
-|-- /util                   # Funciones de utilidad
-|-- ...
-
+5. **Estructura del Proyecto**
+   ```bash
+   |-- 📁 /components # Componentes reutilizables
+   |-- 📁 /pages # Páginas de la aplicación
+   |-- 📁 /styles # Estilos globales y configuración de Tailwind
+   |-- 📁 /prisma # Configuración y modelos de la base de datos con Prisma
+   |-- 📁 /public # Archivos estáticos
+   |-- 📁 /util # Funciones de utilidad
 
 <!-- Autores del proyecto -->
 ## 👨‍💻Authors
@@ -91,4 +88,3 @@ Copy code
 
 [Documentación v1.9](https://docs.google.com/document/d/1Savy7Rl1RXcVc7oTE73I-Ue3_nd-7G1Z/edit?usp=sharing&ouid=102635390576364738500&rtpof=true&sd=true)
 
-Hecho con :heart: y JavaScript.
