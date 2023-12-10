@@ -3,7 +3,7 @@
 import ActionBtn from "@/app/components/ActionBtn";
 import Heading from "@/app/components/Heading";
 import Status from "@/app/components/Status";
-import { formatPrice } from "@/utils/formatPrice";
+import { formatPriceToCOP } from "@/utils/formatPrice";
 import { DataGrid, GridColDef } from "@mui/x-data-grid";
 import { Order, User } from "@prisma/client";
 import moment from "moment";
@@ -38,7 +38,7 @@ const OrdersClient: React.FC<OrdersClientProps> = ({ orders }) => {
     rows = orders.map((order) => {
       return {
         id: order.id,
-        amount: formatPrice(order.amount / 100),
+        amount: formatPriceToCOP(order.amount / 100),
         paymentStatus: order.status,
         date: moment(order.createdDate).fromNow(),
         deliveryStatus: order.deliveryStatus,

@@ -3,7 +3,7 @@
 import { Order } from "@prisma/client";
 import OrderItem from "./OrderItem";
 import Heading from "@/app/components/Heading";
-import { formatPrice } from "@/utils/formatPrice";
+import { formatPriceToCOP } from "@/utils/formatPrice";
 import Status from "@/app/components/Status";
 import { MdAccessTimeFilled, MdDeliveryDining, MdDone } from "react-icons/md";
 import { useEffect } from "react";
@@ -29,7 +29,7 @@ const OrderDetails: React.FC<OrderDetailsProps> = ({ order }) => {
       <div>Orden Id: {order.id}</div>
       <div>
         Total Monto:{" "}
-        <span className="font-bold">{formatPrice(order.amount)}</span>
+        <span className="font-bold">{formatPriceToCOP(order.amount)}</span>
       </div>
       <div className="flex gap-2 items-center">
         <div>Estado de pago:</div>
