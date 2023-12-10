@@ -11,7 +11,7 @@ import { useCart } from "@/hooks/useCart";
 import Button from "../components/Button";
 import Heading from "../components/Heading";
 import { toast } from "react-hot-toast";
-import { formatPriceToCOP } from "@/utils/formatPrice";
+import { formatPrice } from "@/utils/formatPrice";
 
 interface CheckoutProps {
   clientSecret: string;
@@ -28,7 +28,7 @@ const CheckoutForm: React.FC<CheckoutProps> = ({
   const elements = useElements();
   const [isLoading, setIsLoading] = useState(false);
 
-  const formattedPrice = formatPriceToCOP(cartTotalAmount);
+  const formattedPrice = formatPrice(cartTotalAmount);
 
   useEffect(() => {
     if (!stripe) {
